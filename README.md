@@ -5,7 +5,7 @@
 ![visitors](https://visitor-badge.glitch.me/badge?page_id=je4npw.visitor-badge)
 
 <p align="center">
-  <img alt="Letmeask" src=".github/logo.svg" width="160px">
+  <img alt="Letmeask" src="https://github.com/guilhermecapitao/letmeask/raw/master/.github/logo.svgg" width="160px">
 </p>
 
 <p align="center">
@@ -17,7 +17,7 @@
 </p>
 
 <h1 align="center">
-    <img alt="Letmeask" title="Letmeask" src=".github/cover.svg" />
+    <img alt="Letmeask" title="Letmeask" src="https://github.com/guilhermecapitao/letmeask/raw/master/.github/cover.svg" />
 </h1>
 
 <br>
