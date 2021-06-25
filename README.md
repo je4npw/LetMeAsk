@@ -1,5 +1,5 @@
 ### LetMeAsk é um projeto para a trilha de React da #NLW 6 - Rocketseat
-
+## https://letmeask-bf77e.web.app/
 #neverstoplearning
 
 ![visitors](https://visitor-badge.glitch.me/badge?page_id=je4npw.visitor-badge)
@@ -14,8 +14,6 @@
   <img src="https://img.shields.io/github/forks/guilhermecapitao/letmeask?label=forks&message=MIT&color=5965E0&labelColor=121214" alt="Forks">     
 
   <img src="https://img.shields.io/github/stars/guilhermecapitao/letmeask?label=stars&message=MIT&color=5965E0&labelColor=121214" alt="Stars">
-  
-  <a href="https://letmeask-bf77e.web.app/">Visite!</a>
 </p>
 
 <h1 align="center">
