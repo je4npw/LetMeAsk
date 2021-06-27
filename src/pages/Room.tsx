@@ -18,12 +18,16 @@ type RoomParams ={
 }
 
 export function Room() {
-    const {user} = useAuth()
+    const { user, signInWithGoogle } = useAuth()
     const params = useParams<RoomParams>();
     const [newQuestion, setNewQuestion] = useState('')
     const roomId = params.id;
     const { title, questions } = useRoom(roomId)
-
+    async function handleCreateRoom() {
+        if (!user) {
+            await signInWithGoogle()
+        }
+    }
     async function handleCreateNewQuestion(event: FormEvent){
         event.preventDefault()
         if(newQuestion.trim() === '') {
@@ -46,9 +50,9 @@ export function Room() {
     }
     async function handleLikeQuestion(questionId: string, likeId: string | undefined) {
         if (likeId) {
-            const newLike = await database.ref(`rooms/${roomId}/questions/${questionId}/likes/${likeId}`).remove()
+            await database.ref(`rooms/${roomId}/questions/${questionId}/likes/${likeId}`).remove()
         } else {
-            const newLike = await database.ref(`rooms/${roomId}/questions/${questionId}/likes`).push({
+            await database.ref(`rooms/${roomId}/questions/${questionId}/likes`).push({
                 authorId: user?.id,
             })
         }
@@ -81,7 +85,7 @@ export function Room() {
                                 <span>{user.name}</span>
                             </div>
                         ) : (
-                            <span><button>Faça login</button> para enviar uma pergunta.</span>
+                            <span><button onClick={handleCreateRoom}>Faça login</button> para enviar uma pergunta.</span>
                         ) }
                         <Button type="submit" disabled={!user}>Enviar pergunta</Button>
                     </div>
