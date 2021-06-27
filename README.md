@@ -1,5 +1,5 @@
 ### LetMeAsk é um projeto para a trilha de React da #NLW 6 - Rocketseat
-
+## https://letmeask-bf77e.web.app/
 #neverstoplearning
 
 ![visitors](https://visitor-badge.glitch.me/badge?page_id=je4npw.visitor-badge)
@@ -35,7 +35,7 @@ This project was developed using the following technologies:
 Clone the project and access the folder.
 
 ```bash
-$ git clone https://github.com/guilhermecapitao/letmeask.git
+$ git clone https://github.com/je4npw/letmeask.git
 $ cd letmeask
 ```
 
